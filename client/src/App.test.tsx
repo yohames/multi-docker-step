@@ -9,7 +9,7 @@ const mockedAxios = vi.mocked(axios);
 
 describe("App", () => {
   it("renders the Home link", () => {
-    mockedAxios.get.mockResolvedValue({ data: [] });
+    mockedAxios.get = vi.fn().mockResolvedValue({ data: [] });
     render(
       <MemoryRouter>
         <App />
@@ -21,7 +21,7 @@ describe("App", () => {
   });
 
   it("renders the Other Page link", () => {
-    mockedAxios.get.mockResolvedValue({ data: [] });
+    mockedAxios.get = vi.fn().mockResolvedValue({ data: [] });
     render(
       <MemoryRouter>
         <App />

@@ -1,0 +1,21 @@
+sudo: required
+services:
+  - docker
+before_install:
+  - docker build -t samedock/complex-client-test -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run samedock/complex-client-test pnpm test --run --coverage
+
+after_success:
+  - docker build -t samedock/multi-docker-client -f ./client/Dockerfile ./client
+  - docker build -t samedock/multi-docker-server -f ./server/Dockerfile ./server
+  - docker build -t samedock/multi-docker-worker -f ./worker/Dockerfile ./worker
+  - docker build -t samedock/multi-docker-nginx -f ./nginx/Dockerfile ./nginx
+  # Login to Docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Push images to Docker Hub
+  - docker push samedock/multi-docker-client
+  - docker push samedock/multi-docker-server
+  - docker push samedock/multi-docker-worker
+  - docker push samedock/multi-docker-nginx

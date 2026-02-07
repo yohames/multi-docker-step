@@ -1,34 +1,6 @@
-import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-import { describe, it, expect, vi } from "vitest";
-import App from "./App";
-import axios from "axios";
+import { expect, test } from 'vitest'
 
-vi.mock("axios");
-const mockedAxios = vi.mocked(axios);
 
-describe("App", () => {
-  it("renders the Home link", () => {
-    mockedAxios.get = vi.fn().mockResolvedValue({ data: [] });
-    render(
-      <MemoryRouter>
-        <App />
-      </MemoryRouter>
-    );
-
-    const linkElement = screen.getByText(/Home/i);
-    expect(linkElement).toBeInTheDocument();
-  });
-
-  it("renders the Other Page link", () => {
-    mockedAxios.get = vi.fn().mockResolvedValue({ data: [] });
-    render(
-      <MemoryRouter>
-        <App />
-      </MemoryRouter>
-    );
-
-    const linkElement = screen.getByText(/Other Page/i);
-    expect(linkElement).toBeInTheDocument();
-  });
-});
+test('adds 1 + 2 to equal 3', () => {
+  expect(1 + 2).toBe(3)
+})

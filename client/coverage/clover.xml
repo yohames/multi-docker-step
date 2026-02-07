@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1770490929810" clover="3.2.0">
-  <project timestamp="1770490929810" name="All files">
-    <metrics statements="24" coveredstatements="16" conditionals="2" coveredconditionals="1" methods="11" coveredmethods="7" elements="37" coveredelements="24" complexity="0" loc="24" ncloc="24" packages="1" files="4" classes="4"/>
-    <file name="App.css" path="/Volumes/Dev/study/devops/complex/client/src/App.css">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-    </file>
-    <file name="App.tsx" path="/Volumes/Dev/study/devops/complex/client/src/App.tsx">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="7" count="2" type="stmt"/>
-    </file>
-    <file name="OtherPage.tsx" path="/Volumes/Dev/study/devops/complex/client/src/OtherPage.tsx">
-      <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <line num="4" count="0" type="stmt"/>
-    </file>
-    <file name="jib.tsx" path="/Volumes/Dev/study/devops/complex/client/src/jib.tsx">
-      <metrics statements="22" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="9" coveredmethods="6"/>
-      <line num="11" count="2" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="19" count="2" type="stmt"/>
-      <line num="23" count="2" type="stmt"/>
-      <line num="24" count="2" type="stmt"/>
-      <line num="28" count="2" type="stmt"/>
-      <line num="29" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="30" count="2" type="stmt"/>
-      <line num="31" count="2" type="stmt"/>
-      <line num="33" count="0" type="stmt"/>
-      <line num="34" count="0" type="stmt"/>
-      <line num="35" count="0" type="stmt"/>
-      <line num="36" count="0" type="stmt"/>
-      <line num="39" count="0" type="stmt"/>
-      <line num="42" count="2" type="stmt"/>
-      <line num="43" count="2" type="stmt"/>
-      <line num="47" count="2" type="stmt"/>
-      <line num="48" count="2" type="stmt"/>
-      <line num="49" count="0" type="stmt"/>
-      <line num="55" count="2" type="stmt"/>
-      <line num="59" count="2" type="stmt"/>
-      <line num="65" count="0" type="stmt"/>
-    </file>
+<coverage generated="1770494143707" clover="3.2.0">
+  <project timestamp="1770494143707" name="All files">
+    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
   </project>
 </coverage>
